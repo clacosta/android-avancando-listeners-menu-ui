@@ -9,12 +9,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/activity_formulario_aluno_botao_salvar"
+        <EditText
+            android:id="@+id/activity_formulario_aluno_nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Salvar" />
+            android:hint="Nome"
+            android:inputType="textCapWords" />
 
         <EditText
             android:id="@+id/activity_formulario_aluno_telefone"
@@ -31,14 +32,6 @@
             android:layout_margin="8dp"
             android:hint="E-mail"
             android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/activity_formulario_aluno_nome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:hint="Nome"
-            android:inputType="textCapWords" />
 
     </LinearLayout>
 
