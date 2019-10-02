@@ -1,7 +1,6 @@
 # android-avancando-listeners-menu-ui
 
-Curso de
-Android parte 2: Avançando com listeners, menu e UI
+Curso de Android parte 2: Avançando com listeners, menu e UI
 
 1 - Carregando aluno no formulário
 
