@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -43,6 +44,15 @@ public class ListaAlunosActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         menu.add("Remover");
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        AdapterView.AdapterContextMenuInfo menuInfo =
+                (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        Aluno alunoEscolhido = adapter.getItem(menuInfo.position);
+        remove(alunoEscolhido);
+        return super.onContextItemSelected(item);
     }
 
     private void configuraFabNovoAluno() {
